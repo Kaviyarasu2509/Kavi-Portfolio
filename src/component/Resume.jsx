@@ -76,13 +76,13 @@ const Resume = () => {
       {/* Navigation Tabs */}
       <div className="resume-tabs">
         <button
-          className={`btn ${activeSection === "education" ? "btn-primary" : "btn-outline-primary"}`}
+          className={`btn ${activeSection === "education" ? "btn-info" : "btn-outline-info"}`}
           onClick={() => setActiveSection("education")}
         >
           Education
         </button>
         <button
-          className={`btn ${activeSection === "skills" ? "btn-success" : "btn-outline-success"}`}
+          className={`btn ${activeSection === "skills" ? "btn-info" : "btn-outline-info"}`}
           onClick={() => setActiveSection("skills")}
         >
           Skills
@@ -98,8 +98,8 @@ const Resume = () => {
       {/* Education Section */}
       {activeSection === "education" && (
         <div className="section fade-in">
-          <h2 className="section-title">Education</h2>
-          <div className="grid-container">
+          <h2 className="sections-title">Education</h2>
+          <div className="grid-container education">
             {education.map((edu, index) => (
               <div key={index} className="edu-card">
                 <h3>{edu.year}</h3>
@@ -115,7 +115,7 @@ const Resume = () => {
       {/* Skills Section */}
       {activeSection === "skills" && (
         <div className="section fade-in text-center">
-          <h2 className="section-title">Skills</h2>
+          <h2 className="sections-title">Skills</h2>
           <div className="skills-grid">
             {skills.map((skill, index) => (
               <div key={index} className="skill-card">
@@ -130,8 +130,8 @@ const Resume = () => {
       {/* About Me Section */}
       {activeSection === "about" && (
         <div className="section fade-in">
-          <h2 className="section-title">{aboutMe.title}</h2>
-          <p className="about-description">{aboutMe.description}</p>
+          <h2 className="sections-title">{aboutMe.title}</h2>
+          <p className="about-description text-center text-white">{aboutMe.description}</p>
           <div className="about-grid">
             {aboutMe.details.map((item, index) => (
               <div key={index} className="about-card">

@@ -51,7 +51,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right Section - Profile Image with Dotted Animation */}
+
         <div className="col-lg-6 text-center mt-4 mt-lg-0">
           <div className="profile-wrapper">
             <img

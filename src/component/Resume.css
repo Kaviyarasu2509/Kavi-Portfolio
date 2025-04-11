@@ -4,6 +4,7 @@
     padding: 40px 100px;
     background-color: #003566;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 100vh;
   }
   
   /* Tabs Navigation */
@@ -30,10 +31,10 @@
     animation: fade-in 0.5s ease-in-out;
   }
   
-  .section-title {
+  .sections-title {
     text-align: center;
-    font-size: 28px;
-    color: #06014e;
+    font-size: 3.3rem;
+    color: #ffba08;
     margin-bottom: 20px;
   }
   
@@ -49,6 +50,8 @@
     background: #fff;
     border-radius: 8px;
     padding: 25px;
+    margin-top: 20px;
+
     transition: transform 0.3s;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
@@ -88,5 +91,12 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  @media (max-width:720px) {
+    .resume-container {
+      height: auto;
+    }
+    
   }
   

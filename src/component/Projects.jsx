@@ -78,7 +78,7 @@ const Projects = () => {
           <img src={
             slide.mobileImg
           } alt={slide.title} className="project-img-mobile"/>
-          <div className="d-flex justify-content-end gap-3">
+          <div className="d-flex project-btn gap-3 my-3">
             <button onClick={handlePrev} className="project-slider-btn">←</button>
             <button onClick={handleNext} className="project-slider-btn">→</button>
           </div>

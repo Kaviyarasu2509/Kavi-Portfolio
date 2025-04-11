@@ -53,6 +53,7 @@ h2 {
   padding: 12px 30px;
   transition: all 0.3s;
   border-radius: 30px;
+ 
 }
 
 .btn-primary:hover {
@@ -78,6 +79,7 @@ h2 {
   transition: all 0.3s;
   overflow: hidden;
   box-shadow: 0 8px 15px rgba(140, 47, 47, 0.1);
+  
 }
 
 .social-btn img {
@@ -90,6 +92,13 @@ h2 {
 .social-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+.social-btn.github {
+  background: #363637;
+}
+
+.social-btn.linkedin {
+  background: #2f8abb;
 }
 
 .social-btn.github:hover {
@@ -165,3 +174,15 @@ h2 {
     height: 260px;
   }
 }
+
+@media (max-width: 720px) {
+  .profile-wrapper {
+    margin-top: 0 !important;
+    align-self: flex-start;
+  }
+
+  .home-container .row {
+    flex-direction: column-reverse;
+  }
+}
+
