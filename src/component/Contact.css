@@ -1,0 +1,71 @@
+/* Container */
+.contact-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+
+.contact-container:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Info */
+.contact-info {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h4 {
+  color: #28a745;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-item .icon {
+  font-size: 22px;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* Form */
+.contact-form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.btn {
+  padding: 12px;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+}

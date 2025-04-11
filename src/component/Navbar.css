@@ -1,0 +1,77 @@
+/* Navbar Custom Styles */
+.navbar {
+  transition: all 0.3s ease-in-out;
+  background-color: #001d3d;
+  height: 75px;
+}
+
+.navbar-brand h2 {
+  font-weight: bold;
+  font-size: 33px;
+  margin: 0;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-link.active {
+  color: #fdc500 !important;
+  font-weight: bold;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* Hire Me Button */
+.hire-btn {
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 8px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hire-btn:hover {
+  background: #ffd700 !important;
+  color: #000 !important;
+  border: none;
+}
+
+/* Responsive: Ensure smooth opening & closing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background: rgb(1, 1, 75);
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-brand h2 {
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+    display: block;
+  }
+
+  .hire-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
