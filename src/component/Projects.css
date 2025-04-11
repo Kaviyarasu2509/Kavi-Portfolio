@@ -73,7 +73,7 @@
 
   @media (max-width:720px){
     .projects-section{
-      text-align: center;
+      /* text-align: center; */
     }
     .project-split-img {
       display: none;
